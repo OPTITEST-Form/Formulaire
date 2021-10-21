@@ -1,0 +1,222 @@
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Formulaire Commande OPTITEC</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+	<header>
+	<center><a href="NOUVEAU-FORMULAIRE-COMMANDE.html"><img src="logo-optitec-png.png" alt="HTML tutorial" style="width:40%;height:40%;"></a></center>
+	</header>
+	<br>
+  <body>
+    <form method="post" action="mailto:ronan.demangeat.optitec@gmail.com" enctype="text/plain">
+      <h1>Informations générales</h1>
+      <div class="separation"></div>
+       <br>
+      <div class="corps-formulaire">
+        <div class="gauche">
+        
+          <div class="groupe">
+            <label>NOM et Prénom</label>
+            <input type="text" name="NOM et Prenom" id="Nom et Prenom" required />
+          </div>
+          
+          <div class="groupe">
+            <label>Adresse E-mail</label>
+            <input type="text" name="E-Mail" id="E-Mail" required />
+          </div>
+          
+          <div class="groupe">
+            <label>Numéro de Téléphone</label>
+            <input type="text" name="Telephone" id="Telephone" required />
+          </div>
+        </div>
+        
+
+        <div class="droite">
+        
+         <div class="groupe">
+            <label>Entreprise</label>
+            <input type="text" name="Entreprise" id="Entreprise" required  />
+          </div>
+          
+         <div class="groupe">
+            <label>Nom du Chantier</label>
+            <input type="text" name="Nom du Chantier" id="Nom du Chantier" required />
+          </div>
+          
+          <div class="groupe">
+          <label for="datereception"><b>Date de réception des pièces*</b></label>
+            <input type="date" name="Date de reception" id="datereception" required>
+            </div>
+        </div>
+      </div>
+		
+		
+     
+       <h1>Informations Ouvrages</h1>
+      <div class="separation"></div>
+       <br>
+      <div class="corps-formulaire">
+        <div class="gauche">
+        
+          <div class="groupe">
+           <label for="Matiere"><b>Matière</b></label>
+			
+            <select id="Matiere" name="Matiere">
+                    <option value="ACIER BRUT">Acier Brut</option>
+                    <option value="ACIER GALVANISE A CHAUD">Acier Galvanisé à Chaud</option>
+                    <option value="ACIER GALVANISE A FROID">Acier Galvanisé à Froid</option>
+					<option value="ALUMINIUM">Aluminium</option>
+					<option value="CUIVRE">Cuivre</option>
+					<option value="INOX">Inox</option>
+            </select>
+           </div>
+           
+           <div class="groupe">
+           <label for="corrosivite"><b>Catégorie de corrosivité</b></label>
+			
+            <select id="corrosivite" name="Categorie de Corrosivite">
+                    <option value="C2 - INTERIEUR">C2 - Intérieur</option>
+                    <option value="C3 - ZONE RURALE">C3 - Zone Rurale</option>
+					<option value="C4 - ZONE URBAINE">C4 - Zone Urbaine</option>
+					<option value="C5 - ZONE COTIERE">C5 - Zone Cotière</option>
+					<option value="C5i - ZONE INDUSTRIELLE">C5I - Zone Industrielle</option>
+					<option value="C5m - ZONE OFFSHORE">C5M - Zone Off-shore</option>
+            </select>
+			</div>
+            
+             <div class="groupe">
+           <label for="Destination ouvrage"><b>Destination de l'ouvrage</b></label>
+			
+            <select id="Destination de l'ouvrage" name="Destination de l'ouvrage">
+                    <option value="OUVRAGE INTERIEUR">Ouvrage intérieur</option>
+                    <option value="OUVRAGE EXTERIEUR">Ouvrage extérieur</option>
+            </select>
+			</div>
+           
+           <div class="groupe">
+           <label for="Proche Bord de Mer"><b>Proximité du bord de mer</b></label>
+			
+            <select id="Proche Bord de Mer" name="Proche Bord de Mer">
+                    <option value="Plus de 5 Km">Plus de 5 Km</option>
+                    <option value="Moins de 5 Km">Moins de 5 Km</option>
+            </select>
+			</div>
+            
+           <div class="groupe">
+           <label for="Proche Point d'eau"><b>Proximité d'un point d'eau</b></label>
+			
+            <select id="Proche Point d'eau" name="Proche Point d'eau">
+                    <option value="OUI">OUI</option>
+                    <option value="NON">NON</option>
+            </select>
+			</div>
+            
+            <div class="groupe">
+           <label for="Atmosphere Agressif"><b>Atmosphère chimique et agressif</b></label>
+			
+            <select id="Atmosphere Agressif" name="Atmosphere Agressif">
+                    <option value="OUI">OUI</option>
+                    <option value="NON">NON</option>
+            </select>
+			</div>
+            
+        </div>
+        
+          <div class="droite">
+        
+          <div class="groupe">
+           <label for="Renovation"><b>Est-ce une rénovation ?</b></label>
+			
+            <select id="Renovation" name="Renovation">
+                    <option value="OUI">OUI</option>
+                    <option value="NON">NON</option>
+            </select>
+           </div>
+           
+            <div class="groupe">
+           <label for="Partie en laquage"><b>Partie à laquer</b></label>
+			
+            <select id="Partie en laquage" name="Partie en laquage">
+                    <option value="Une seule face">Une seule face</option>
+                    <option value="Les deux faces">Les deux faces</option>
+            </select>
+           </div>
+           
+           <div class="test">
+           <div class="groupe">
+           <label for="choix"><b>Options supplémentaires ?</b></label>
+            <p><input type="checkbox" name="MASQUAGE"> Masquage <br>
+            <input type="checkbox" name="DEFILMAGE"> Défilmage <br>
+            <input type="checkbox" name="COLISAGE"> Colisage <br>
+			<input type="checkbox" name="PERCAGE"> Perçage <br>
+			<input type="checkbox" name="ASSEMBLAGE"> Assemblage <br>
+			<input type="checkbox" name="GALVANISATION"> Galvanisation <br>
+			<input type="checkbox" name="ENTREFER"> Entrefer <br>
+			<input type="checkbox" name="RENOVATION"> Rénovation <br>
+			<input type="checkbox" name="RESPECT PALETTISATION"> Respect palettisation</p>
+      </div>
+      </div>
+      </div>
+      </div>
+		
+
+		
+      <h1>Choix de la finition</h1>
+      <div class="separation"></div>
+       <br>
+      <div class="corps-formulaire">
+        <div class="gauche">
+        
+          <div class="groupe">
+            <label>Couleur RAL </label>
+            <input type="text" name="Couleur RAL" id="Couleur RAL" required >
+          </div>
+          
+           <div class="groupe">
+           <label for="Brillance / Aspect"><b>Brillance & Aspect</b></label>
+			
+            <select id="Brillance / Aspect" name="Brillance / Aspect">
+                    <option value="Fine Texture">Fine Texture</option>
+                    <option value="Mat - 30%">Mat - 30%</option>
+                    <option value="Satiné - 60%">Satiné - 60%</option>
+                    <option value="Brillant - 85%">Brillant - 85%</option>
+                    <option value="Grain Cuir">Grain Cuir</option>
+            </select>
+          </div>
+          
+          
+          </div>
+          
+     
+     
+        <div class="droite">
+        
+        <div class="groupe">
+     
+     	  <label>Référence fournisseur </label>
+          <input type="text" name="Ref Fournisseur" id="Ref Fournisseur" required>
+
+			
+     </div>
+     </div>
+     </div>
+
+      </div>
+      <div class="pied-formulaire" align="center">
+        <button>Envoyer le message</button>
+      </div>
+    </form>
+    
+    </div>
+      
+    
+    
+    
+    
+  </body>
+</html>
